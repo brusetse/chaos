@@ -8,17 +8,6 @@ func main() {
 	fmt.Println(sum_changeable(1, 2, 3, 4, 5))
 	fmt.Println(closure(1, 2, 3, 4, 5))
 	fmt.Println(recursion(10))
-
-	// defer 在函数运行结束的时候运行一段代码或调用一个清理函数
-	second()
-	defer first()
-	// panic用来触发异常，而recover用来终止异常并且返回传递给panic的值
-	defer func() {
-		msg := recover()
-		fmt.Println(msg)
-	}()
-	fmt.Println("I am walking and singing...")
-	panic("It starts to rain cats and dogs")
 }	
 
 // 命名返回值
@@ -65,12 +54,4 @@ func recursion(n int) int {
 	} else {
 		return n * recursion(n - 1)
 	}
-}
-
-// 异常
-func first() {
-    fmt.Println("first func run")
-}
-func second() {
-    fmt.Println("second func run")
 }
