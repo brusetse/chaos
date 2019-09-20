@@ -5,3 +5,7 @@
 
 # python
 __pycache__
+
+# build
+build
+.gradle
