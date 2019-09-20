@@ -1,0 +1,3 @@
+dependencies {
+    compile 'cn.hutool:hutool-all:4.6.6'
+}

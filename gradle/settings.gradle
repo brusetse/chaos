@@ -1,0 +1,4 @@
+rootProject.name = 'gradle-demo'
+include 'child-one'
+include 'child-two'
+

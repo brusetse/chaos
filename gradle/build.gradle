@@ -1,0 +1,20 @@
+subprojects {
+    apply plugin: 'java'
+    
+    group 'com.bruse'
+    version '1.0.0'
+    
+    sourceCompatibility = 1.8
+    
+    repositories {
+        // mavenCentral()
+        maven {
+            url "http://maven.ivyb2b.cn/nexus/content/groups/public/"
+        }
+    }
+    
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        compile 'cn.hutool:hutool-all:4.6.6'
+    }
+}
